@@ -133,8 +133,8 @@ class TestCalculator(unittest.TestCase):
         self.assertIsNone(self.calc.last_result())
         self.calc.add(5, 3)
         self.assertEqual(self.calc.last_result(), 8)
-        self.calc.multiply(2, 4)
-        self.assertEqual(self.calc.last_result(), 8)
+        self.calc.multiply(3, 4)
+        self.assertEqual(self.calc.last_result(), 12)
 
     def test_clear_history(self):
         self.calc.add(1, 1)
