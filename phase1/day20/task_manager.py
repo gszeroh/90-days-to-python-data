@@ -248,7 +248,7 @@ class TaskManager:
     def load_from_file(self) -> None:
         """Load tasks from the JSON file, replacing the in-memory list.
 
-        If the file does not exist the task list is left empty.
+        If the file does not exist, the task list is left empty.
 
         Raises:
             json.JSONDecodeError: If the file contains invalid JSON.
