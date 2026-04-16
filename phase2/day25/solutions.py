@@ -134,7 +134,7 @@ def memory_usage_report(df):
     """
     mem = df.memory_usage(deep=True)
     # Exclude the index entry for per-column breakdown
-    per_column = mem.drop("Index").to_dict()
+    per_column = mem.iloc[1:].to_dict()
     total_bytes = mem.sum()
     return {
         "per_column": {col: int(val) for col, val in per_column.items()},

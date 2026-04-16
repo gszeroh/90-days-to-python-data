@@ -53,7 +53,7 @@ Requires the `openpyxl` (`.xlsx`) or `xlrd` (`.xls`) engine.
 
 ```python
 # Record-oriented JSON
-df = pd.read_json('data.json', orient='records')
+df = pd.read_json("data.json", orient="records")
 
 # From a Python list of dicts
 df = pd.DataFrame([{"a": 1, "b": 2}, {"a": 3, "b": 4}])
