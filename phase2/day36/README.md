@@ -175,7 +175,7 @@ samples = dist.rvs(size=1000, random_state=42)
 mu_hat, sigma_hat = stats.norm.fit(samples)
 print(f"Fitted μ={mu_hat:.2f}, σ={sigma_hat:.2f}")
 
-# 95 % confidence interval
+# 95% confidence interval
 lo, hi = dist.interval(0.95)
 print(f"95% CI: [{lo:.2f}, {hi:.2f}]")
 
