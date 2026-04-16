@@ -157,8 +157,8 @@ ax.grid(True, linestyle="--", alpha=0.5)
 ax.tick_params(axis="both", labelsize=10)
 
 fig.tight_layout()
-fig.savefig("customisation.png", dpi=100)
-print("Saved customisation.png — styled with grid, legend, bold title")
+fig.savefig("customization.png", dpi=100)
+print("Saved customization.png — styled with grid, legend, bold title")
 plt.close(fig)
 
 print("\n--- Available styles (first 10) ---")
